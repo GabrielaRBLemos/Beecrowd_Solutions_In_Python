@@ -1,0 +1,6 @@
+distance = int(input())
+speed_x = 60
+speed_y = 90
+hours = distance / abs((speed_y - speed_x))
+minutes = hours * 60
+print(f"{int(minutes)} minutos")
