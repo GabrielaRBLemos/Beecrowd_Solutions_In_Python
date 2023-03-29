@@ -1,0 +1,7 @@
+int_a = int(input())
+int_b = int(input())
+int_c = int(input())
+int_d = int(input())
+dif = (int_a * int_b - int_c * int_d)
+result = f"DIFERENCA = {dif}"
+print(result)
