@@ -1,0 +1,4 @@
+code_1,units_1,price_1 = [float(i) for i in  input().split()]
+code_2,units_2,price_2 = [float(i) for i in  input().split()]
+payment = units_1 * price_1 + units_2 * price_2
+print(f"VALOR A PAGAR: R$ {payment:.2f}")
