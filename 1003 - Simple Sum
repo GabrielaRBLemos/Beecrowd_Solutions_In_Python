@@ -1,0 +1,4 @@
+int_a = int(input())
+int_b = int(input())
+sum_a_b = int_a + int_b
+print(f"SOMA = {sum_a_b}")
