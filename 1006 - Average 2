@@ -1,0 +1,9 @@
+grade_a = float(input())
+grade_b = float(input())
+grade_c = float(input())
+weight_a = 2
+weight_b = 3
+weight_c = 5
+average = (grade_a * weight_a + grade_b * weight_b + grade_c * weight_c)/(weight_a + weight_b + weight_c)
+result = f"MEDIA = {average:.1f}"
+print(result)
