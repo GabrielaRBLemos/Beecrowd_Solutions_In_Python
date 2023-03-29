@@ -1,0 +1,4 @@
+int_a = int(input())
+int_b = int(input())
+prod_a_b = int_a * int_b
+print(f"PROD = {prod_a_b}")
