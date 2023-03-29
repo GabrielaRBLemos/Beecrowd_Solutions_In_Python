@@ -1,0 +1,5 @@
+a,b,c = [int(i) for i in input().split()]
+greatest_a_b = (a + b + abs(a - b))/2
+d = greatest_a_b
+greatest_a_b_c = (d + c + abs(d - c))/2
+print(f"{int(greatest_a_b_c)} eh o maior")
