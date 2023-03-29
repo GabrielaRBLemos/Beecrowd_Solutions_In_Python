@@ -1,0 +1,8 @@
+name = input()
+fixed_salary = float(input())
+sales = float(input())
+bonus_percentage = 3/20
+bonus = sales * bonus_percentage
+total_salary = fixed_salary + bonus
+total_salary = f"TOTAL = R$ {total_salary:.2f}"
+print(total_salary)
