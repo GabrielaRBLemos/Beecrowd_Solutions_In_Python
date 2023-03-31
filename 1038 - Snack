@@ -1,0 +1,4 @@
+code, quantity = [int(i) for i in input().split()]
+price = [4.00,4.50,5.00,2.00,1.50]
+cost = quantity * price[code - 1]
+print(f"Total: R$ {cost:.2f}")
