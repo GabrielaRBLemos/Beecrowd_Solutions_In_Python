@@ -1,0 +1,24 @@
+value = int(input())
+one =  value
+hundred = one / 100
+one = one % 100
+fifty = one / 50
+one = one % 50
+twenty = one / 20
+one = one % 20
+ten = one / 10
+one = one % 10
+five = one / 5
+one = one % 5
+two = one / 2
+one = one % 2
+def printBanknote(banknote, value):
+    print(f"{int(banknote)} nota(s) de R$ {value},00")
+print(value)
+printBanknote(hundred, 100)
+printBanknote(fifty, 50)
+printBanknote(twenty, 20)
+printBanknote(ten, 10)
+printBanknote(five, 5)
+printBanknote(two, 2)
+printBanknote(one, 1)
