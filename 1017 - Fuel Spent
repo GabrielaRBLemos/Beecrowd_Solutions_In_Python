@@ -1,0 +1,6 @@
+#time in hours, speed in km/h and fuel in liters
+time = int(input())
+speed = int(input())
+distance = speed * time
+fuel = distance / 12
+print(f"{fuel:.3f}")
