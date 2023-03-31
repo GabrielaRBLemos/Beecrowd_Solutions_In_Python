@@ -1,0 +1,16 @@
+from math import sqrt
+quadratic_coefficient,linear_coefficient,constant_coefficient = [float(i) for i in input().split()]
+delta = linear_coefficient ** 2 - 4 * quadratic_coefficient * constant_coefficient
+if delta < 0:
+    print("Impossivel calcular")
+else:
+    divisor = 2 * quadratic_coefficient
+    divident_1 = -abs(linear_coefficient) + sqrt(delta)
+    divident_2 = -abs(linear_coefficient) - sqrt(delta)
+    if divisor == 0 or divident_1 == 0 or divident_2 == 0:
+        print("Impossivel calcular")
+    else:
+        root_1 = divident_1 / divisor
+        root_2 = divident_2 / divisor
+        print(f"R1 = {root_1:.5f}")
+        print(f"R2 = {root_2:.5f}")
