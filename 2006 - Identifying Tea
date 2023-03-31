@@ -1,0 +1,5 @@
+#(1) white tea; (2) green tea; (3) black tea; or (4) herbal tea.
+tea_type = int(input())
+answers = list(map(int,input().split()))
+correct_answers = answers.count(tea_type)
+print(correct_answers)
