@@ -1,0 +1,16 @@
+sides = [float(i) for i in input().split()]
+sides.sort(reverse=True)
+if sides[0] >= sides[1] + sides[2]:
+    print("NAO FORMA TRIANGULO")
+else:
+    if sides[0] ** 2 == sides[1] ** 2 + sides[2] ** 2:
+        print("TRIANGULO RETANGULO")
+    if sides[0] ** 2 > sides[1] ** 2 + sides[2] ** 2:
+        print("TRIANGULO OBTUSANGULO")
+    if sides[0] ** 2 < sides[1] ** 2 + sides[2] ** 2:
+        print("TRIANGULO ACUTANGULO")
+    if sides[0] == sides[1] and sides[1] == sides[2]:
+        print("TRIANGULO EQUILATERO")
+    if (sides[0] == sides[1] and sides[1] != sides[2]) or (sides[0] == sides[2] and sides[2] != sides[1]) or (sides[2] == sides[1] and sides[1] != sides[0]):
+        #if two sides are the same and one different
+        print("TRIANGULO ISOSCELES")
