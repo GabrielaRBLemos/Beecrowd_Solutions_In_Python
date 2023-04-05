@@ -1,0 +1,12 @@
+x = int(input())
+if x % 2 == 1:
+    print(x)
+    quantity_consecutives = 5
+else:
+    quantity_consecutives = 6
+consecutive = x
+for i in range(quantity_consecutives):
+    consecutive = consecutive + 1
+    if consecutive % 2 == 0:
+        consecutive = consecutive + 1
+    print(consecutive)
