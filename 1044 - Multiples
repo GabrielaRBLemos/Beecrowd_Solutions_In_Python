@@ -1,0 +1,7 @@
+num_a, num_b = [float(i) for i in input().split()]
+greatest_a_b = (num_a + num_b + abs(num_a - num_b)) / 2
+smallest_a_b = (num_a + num_b - abs(num_a - num_b)) / 2
+if greatest_a_b % smallest_a_b == 0:
+    print("Sao Multiplos")
+else:
+    print("Nao sao Multiplos")
