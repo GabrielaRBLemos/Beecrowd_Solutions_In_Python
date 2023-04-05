@@ -1,0 +1,7 @@
+start_hour, start_minutes, end_hour, end_minutes = [int(i) for i in input().split()]
+difference_minutes = (end_hour - start_hour) * 60 + end_minutes - start_minutes
+while difference_minutes <= 0:
+    difference_minutes = difference_minutes + 1440
+difference_hour = difference_minutes // 60
+difference_minutes = difference_minutes % 60
+print(f"O JOGO DUROU {difference_hour} HORA(S) E {difference_minutes} MINUTO(S)")
