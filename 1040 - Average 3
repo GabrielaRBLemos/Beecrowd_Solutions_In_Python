@@ -1,0 +1,22 @@
+score_1, score_2, score_3, score_4 = [float(i) for i in input().split()]
+weight_1 = 2
+weight_2 = 3
+weight_3 = 4
+weight_4 = 1
+total_weight = weight_1 + weight_2 + weight_3 + weight_4
+average_score = ((score_1 * weight_1) + (score_2 * weight_2) + (score_3 * weight_3) + (score_4 * weight_4)) / total_weight
+print(f"Media: {average_score:.1f}")
+if average_score >= 7.0:
+    print ("Aluno aprovado.")
+elif average_score >= 5.0 and average_score < 7.0:
+    print ("Aluno em exame.")
+    score_5 = float(input())
+    print(f"Nota do exame: {score_5}")
+    average_score = (average_score + score_5) / 2
+    if average_score >= 5.0:
+        print ("Aluno aprovado.")
+    elif average_score < 5.0:
+        print ("Aluno reprovado.")
+    print(f"Media final: {average_score:.1f}")
+elif average_score < 5.0:
+    print ("Aluno reprovado.")
