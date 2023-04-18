@@ -1,0 +1,5 @@
+start_hour, end_hour = [int(i) for i in input().split()]
+difference = end_hour - start_hour
+while difference <= 0:
+    difference = difference + 24
+print(f"O JOGO DUROU {difference} HORA(S)")
