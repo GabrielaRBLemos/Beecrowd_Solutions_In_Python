@@ -1,0 +1,26 @@
+animal_subphylum = input()
+animal_class = input()
+animal_order = input()
+if animal_subphylum == "vertebrado":
+    if animal_class == "ave":
+        if animal_order == "carnivoro":
+            animal = "aguia"
+        elif animal_order == "onivoro":
+            animal = "pomba"
+    elif animal_class == "mamifero":
+        if animal_order == "onivoro":
+            animal = "homem"
+        elif animal_order == "herbivoro":
+            animal = "vaca"
+elif animal_subphylum == "invertebrado":
+    if animal_class == "inseto":
+        if animal_order == "hematofago":
+            animal = "pulga"
+        elif animal_order == "herbivoro":
+            animal = "lagarta"
+    elif animal_class == "anelideo":
+        if animal_order == "hematofago":
+            animal = "sanguessuga"
+        elif animal_order == "onivoro":
+            animal = "minhoca"
+print(animal)
