@@ -1,0 +1,9 @@
+num_a, num_b, num_c = [float(i) for i in input().split()]
+triangle = num_a < num_b + num_c and num_b < num_a + num_c and num_c < num_b + num_a
+if triangle:
+    perimeter = num_a + num_b + num_c
+    print(f"Perimetro = {perimeter:.1f}")
+else:
+    #calculate area of trapezium
+    area = ((num_a + num_b) * num_c) / 2
+    print(f"Area = {area:.1f}")
