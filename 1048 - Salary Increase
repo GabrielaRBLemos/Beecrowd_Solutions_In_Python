@@ -1,0 +1,16 @@
+current_salary = float(input())
+if current_salary >= 0 and current_salary <= 400.00:
+    readjustment_rate = 15 / 100
+if current_salary >= 400.01 and current_salary <= 800.00:
+    readjustment_rate = 12 / 100
+if current_salary >= 800.01 and current_salary <= 1200.00:
+    readjustment_rate = 10 / 100
+if current_salary >= 1200.01 and current_salary <= 2000.00:
+    readjustment_rate = 7 / 100
+if current_salary >= 2000.01:
+    readjustment_rate = 4 / 100
+readjustment_gain = current_salary * readjustment_rate
+new_salary =  readjustment_gain + current_salary
+print(f"Novo salario: {new_salary:.2f}")
+print(f"Reajuste ganho: {readjustment_gain:.2f}")
+print(f"Em percentual: {int(readjustment_rate * 100)} %")
