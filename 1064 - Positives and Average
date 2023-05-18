@@ -1,0 +1,11 @@
+from math import ceil
+num_positive = 0
+positives_sum = 0
+for i in range(6):
+    n = float(input())
+    if n > 0:
+        num_positive = num_positive + 1
+        positives_sum = positives_sum + n
+average = positives_sum / num_positive
+print(f"{num_positive} valores positivos")
+print(round(average, 1))
