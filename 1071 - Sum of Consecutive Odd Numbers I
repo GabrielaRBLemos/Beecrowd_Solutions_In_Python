@@ -1,0 +1,9 @@
+x = int(input())
+y = int(input())
+extremes = [x,y]
+extremes.sort()
+to_sum = []
+for i in range(extremes[0]+1,extremes[1]):
+    if i % 2 != 0:
+        to_sum.append(i)
+print(sum(to_sum))
