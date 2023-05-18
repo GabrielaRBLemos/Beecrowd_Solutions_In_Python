@@ -1,0 +1,7 @@
+from math import ceil
+num_positive = 0
+for i in range(6):
+    n = float(input())
+    if n > 0:
+        num_positive = num_positive + 1
+print(f"{num_positive} valores positivos")
